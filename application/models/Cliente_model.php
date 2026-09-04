@@ -11,7 +11,7 @@ class Cliente_model extends CI_Model {
 
     public function obtener_todos()
     {
-        return $this->db->order_by('apellidos', 'ASC')->get($this->tabla)->result();
+        return $this->db->order_by('id', 'ASC')->get($this->tabla)->result();
     }
 
     public function obtener($id)
