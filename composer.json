@@ -6,5 +6,7 @@
             "email": "mlucerob@miumg.edu.gt"
         }
     ],
-    "require": {}
+    "require": {
+        "vlucas/phpdotenv": "^5.7"
+    }
 }
