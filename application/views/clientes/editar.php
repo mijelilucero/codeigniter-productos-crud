@@ -5,7 +5,7 @@
 
 <div class="card">
     <div class="card-body">
-        <?= form_open('clientes/actualizar/' . $cliente->id) ?>
+        <?= form_open('clientes/editar/' . $cliente->id) ?>
             <div class="mb-3">
                 <label class="form-label">Nombres</label>
                 <?= form_input(['name' => 'nombres', 'class' => 'form-control', 'value' => set_value('nombres', $cliente->nombres)]) ?>

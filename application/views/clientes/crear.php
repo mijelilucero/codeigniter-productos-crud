@@ -5,7 +5,7 @@
 
 <div class="card">
     <div class="card-body">
-        <?= form_open('clientes/guardar') ?>
+        <?= form_open('clientes/crear') ?>
             <div class="mb-3">
                 <label class="form-label">Nombres</label>
                 <?= form_input(['name' => 'nombres', 'class' => 'form-control', 'value' => set_value('nombres')]) ?>

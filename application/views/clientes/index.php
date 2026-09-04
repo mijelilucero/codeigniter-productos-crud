@@ -4,6 +4,10 @@
     <a href="<?= site_url('clientes/crear') ?>" class="btn btn-primary">Nuevo cliente</a>
 </div>
 
+<?php if ($this->session->flashdata('mensaje')): ?>
+    <div class="alert alert-success"><?= $this->session->flashdata('mensaje') ?></div>
+<?php endif; ?>
+
 <div class="card">
     <div class="card-body">
         <table class="table table-bordered align-middle">
