@@ -16,7 +16,7 @@ class Cliente_model extends CI_Model {
 
     public function obtener($id)
     {
-        return $this->db->where('id', $id)->get($this->table)->row();
+        return $this->db->where('id', $id)->get($this->tabla)->row();
     }
 
     public function insertar($datos)
@@ -29,12 +29,12 @@ class Cliente_model extends CI_Model {
     public function actualizar($id, $datos)
     {
         $datos['updated_at'] = date('Y-m-d H:i:s');
-        return $this->db->where('id', $id)->update($this->table, $datos);
+        return $this->db->where('id', $id)->update($this->tabla, $datos);
     }
 
     public function eliminar($id)
     {
-        return $this->db->where('id', $id)->delete($this->table);
+        return $this->db->where('id', $id)->delete($this->tabla);
     }
 
     public function contar_total()
