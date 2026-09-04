@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS clientes_crud;
+USE clientes_crud;
+
+CREATE TABLE IF NOT EXISTS clientes (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nombres VARCHAR(100) NOT NULL,
+    apellidos VARCHAR(100) NOT NULL,
+    dpi VARCHAR(20) NOT NULL,
+    telefono VARCHAR(20),
+    direccion VARCHAR(200) NOT NULL,
+    created_at TIMESTAMP NULL DEFAULT NULL,
+    updated_at TIMESTAMP NULL DEFAULT NULL
+);
