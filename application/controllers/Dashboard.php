@@ -6,11 +6,16 @@ class Dashboard extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        $this->load->model('Cliente_model');
     }
 
     public function index()
     {
+        $data['total_clientes'] = $this->Cliente_model->contar_total();
+        $data['fecha_actual'] = date('d/m/Y');
+
         $this->load->view('templates/header');
+        $this->load->view('dashboard/index', $data);
         $this->load->view('templates/footer');
     }
 }
